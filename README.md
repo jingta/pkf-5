@@ -1,9 +1,9 @@
 PayPal Kraken Forge by the Node Firm
 ====================================
 
-March 17-19, 2014<br>
-PayPal San Jose<br>
-with Daniel Shaw (@dshaw) and Eli Insua (@tmpvar)<br>
+March 24th to 26th, 2014<br>
+PayPal Boston<br>
+with Chris Williams (@voodootikigod) and Brian LeRoux (@brianleroux)<br>
 (pkf-5)
 
 ## Objectives
