@@ -1,0 +1,12 @@
+*.swp
+.DS_Store
+.idea
+nohup.out
+node_modules
+npm-debug.log
+server/views/blog
+*.pem
+*.srl
+*.iml
+local.log
+*.log
