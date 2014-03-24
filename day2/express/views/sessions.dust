@@ -1,0 +1,4 @@
+{>layout/}
+{<content}
+  Page views: {viewCount}
+{/content}

@@ -1,0 +1,4 @@
+{! Include partial !}
+{> "10_header" /}
+
+<body>Welcome!</body>

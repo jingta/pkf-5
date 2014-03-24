@@ -1,0 +1,9 @@
+<p>
+  I am {name} and I live in
+  {~s}
+  {> "08_display_address" address=homeAddress /}
+  {~s}
+  I work in
+  {~s}
+  {> "08_display_address" address=workAddress /}
+</p>

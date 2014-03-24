@@ -1,0 +1,11 @@
+{
+  "title": "Node.js Core Dependencies",
+  "names": [
+    { "name": "libuv", "url": "https://github.com/joyent/libuv" },
+    { "name": "V8", "url": "http://code.google.com/p/v8/" },
+    { "name": "OpenSSL", "url": "http://www.openssl.org/" },
+    { "name": "zlib", "url": "http://www.zlib.net/" },
+    { "name": "c-ares", "url": "http://c-ares.haxx.se/" },
+    { "name": "http_parser", "url": "https://github.com/joyent/http-parser" }
+  ]
+}

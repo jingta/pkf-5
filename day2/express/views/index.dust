@@ -1,0 +1,4 @@
+{>layout/}
+{<content}
+    Additional content from a partial.
+{/content}
