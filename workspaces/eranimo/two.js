@@ -9,6 +9,14 @@ var SimpleServer = function (){
     this.server = http.createServer();
     return this;
 };
+
+var check = function (path, check){
+    if (path instanceof RegExp){
+        return path.test(check);
+    } else {
+        return path === check;
+    }
+};
 SimpleServer.prototype.start = function (port){
     var self = this;
     if (typeof port === "undefined"){
@@ -32,6 +40,9 @@ SimpleServer.prototype.start = function (port){
             res.end();
         };
         res.sendFile = function (file){
+            if (file[0] === "/"){
+                file = file.substr(1);
+            }
             fs.readFile(file, function(err, bytes) {
                 res.setHeader('content-type', mime.lookup(file));
                 res.write(bytes.toString());
@@ -39,7 +50,7 @@ SimpleServer.prototype.start = function (port){
             });
         };
         self.routes.forEach(function (route){
-            if (route.method === req.method && route.path === req.url){
+            if (route.method === req.method && check(route.path, req.url)){
                 res.statusCode = 200;
                 route.callback.call({}, req, res);
                 found = true;
@@ -76,6 +87,14 @@ SimpleServer.prototype.push = function (path, callback){
     this.on('PUSH', path, callback);
     return this;
 };
+SimpleServer.prototype.serveStatic = function (place){
+    if (typeof place === "undefined"){
+        place = 'static';
+    }
+    this.get(new RegExp('/'+place+'/*/'), function (req, res){
+        res.sendFile(req.url);
+    });
+};
 
 var server = new SimpleServer();
 server.get('/', function (req, res){
@@ -91,4 +110,6 @@ server.get('/text', function (req, res){
 server.get('/json', function (req, res){
     res.sendFile('example.json');
 });
+server.serveStatic();
+
 server.start(8081);
