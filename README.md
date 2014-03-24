@@ -69,8 +69,8 @@ Pre-training resources are available immediately. Source files are distributed t
 * Day 1: Node Core
     * [Syllabus and Learning Objectives](./syllabus/day1-syllabus.pdf)
     * [Source Files](./day1)
-    * Slides
-    * Labs
+    * [Slides](./day1-pdf/)
+    * [Labs](./labs/day1-labs.md)
 * Day 2: Userland and Best Practice
     * [Syllabus and Learning Objectives](./syllabus/day2-syllabus.pdf)
     * [Source Files](./day2)
