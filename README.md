@@ -73,12 +73,12 @@ Pre-training resources are available immediately. Source files are distributed t
     * Labs
 * Day 2: Userland and Best Practice
     * [Syllabus and Learning Objectives](./syllabus/day2-syllabus.pdf)
-    * Source Files
+    * [Source Files](./day2)
     * Slides
     * Labs
 * Day 3: Kraken.js / PayPal
     * [Syllabus and Learning Objectives](./syllabus/day3-syllabus.pdf)
-    * Source Files
+    * [Source Files](./day3)
     * Slides
     * Labs
 * Post-training
