@@ -184,8 +184,11 @@ generators are a good way to share best practices etc
 
 theres a generator-generator for this purposes
 
+*tip:* use `hotnode` for filesystem monitoring (similar to nodemon)
 
-
+*tip:* look at..
+* `anydb` as starting point for db connections
+* `bcrypt` use it.
 
 ***
 Done!
