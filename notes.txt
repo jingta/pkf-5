@@ -107,4 +107,20 @@ can bind to running process by sending a `kill -SIGUSR1 <pid>`
 
 can use `node-debugger` on command line (install npm)
 attach to it via `node --debug-brk day2/debugging/02_interval.js`
-otherwise use debug code breakpoints
+otherwise use debug code breakpoints. this lets you use a chrome debugger
+
+###Testing
+chai for assertions, mocha for async testing
+
+    npm init
+    npm i mocha chai --save-dev
+    // edit the package.json scripts section to be:
+    // "test": "mocha test/*.js -R spec"
+
+if you forget to call the callback function for an async test (param for `it("should foo", function(next){});`), you will see a timeout
+
+you can use `istanbul` to get coverage numbers
+
+    npm install istanbul --save-dev
+    // edit the package.json scripts section to be:
+    // "test": "istanbul cover _mocha -- test/*.js -R spec"
