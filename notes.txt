@@ -1,0 +1,110 @@
+#Node JS with NodeFirm
+
+
+##Day 1
+
+[PayPal Kraken Forge repo](https://github.com/nodefirm/pkf-5)
+
+Check out [libuv repo](https://github.com/joyent/libuv) and epoll
+
+[Art of Unix programming](https://archive.org/details/ost-computer-science-the_art_of_unix_programming-1) - free ebook
+
+**TODO:** crockford constructors
+
+*tip:* use named functions (helps with debugging)
+
+[pm2](https://github.com/Unitech/pm2) (in austin) vs [upstart](http://upstart.ubuntu.com/) (formerly for ubuntu) vs [initd]() (now for ubuntu) for process watchdogging
+
+*tip:* avoid try/catch (code smell, blocking)
+
+*tip:* pbpaste for getting data into commandline
+
+    $: pbpaste > file.js
+
+###Domains
+use domains to handle errors.
+you can use domain.intercept to help debug code.
+domains are currently unstable however.
+
+###Buffers
+Node concept to deal with binary data
+
+originally node used utf8 encoded strings. not performant
+
+buffers can be used to swap encodings
+
+can use buffer code in browser too! (sound analysis, create images)
+
+**TODO:** look at the [html5 tuner](http://www.freetuner.co/) or [leshy labs tuner](http://www.leshylabs.com/apps/tuner/)
+
+###Streaming
+grunt (sync) vs gulpjs (async/piped streams) vs broccoli
+
+stdin /out are streams
+
+Transforms are a type of stream
+
+streams are a popular node primitive
+
+[request](https://github.com/mikeal/request) can help you make http requests
+
+when using streams, you can use `npm install through`
+to learn about streaming, you can walk through substacks' [stream adventure](https://github.com/substack/stream-adventure)
+
+stream-adventure uses the same stuff as nodeready
+
+###FS
+
+`require('path')` for x-platform support
+
+`use readFile` will load entire file into memory
+
+you should normally use `fs.createReadStream(src).pipe` and `createWriteStream`
+
+*tip:* use path! and streams! avoid sync!
+
+###TCP
+tcp is just duplex sockets
+
+###HTTP
+
+request and cheerio are two popular libraries (compared with native http)
+
+cheerio is good for screenscraping (jquery like)
+
+use url module for url tweaking
+
+`http.globalAgent.maxSockets = 100` wil let you tweak the number of sockets. alternatively, you can set `http.globalAgent = false`
+THIS MIGHT BE GETTING REVERTED TO BE FALSE BY DEFAULT IN THE NEXT NODE VERSION
+
+
+##Day 2
+
+[Twelve factor app](http://12factor.net/) is a set of 'commandments' for modern web apps
+
+###Debugging and Logging
+* domains
+* AsyncListener
+* longjohn
+* winston
+
+*tip:* start with [winston](https://github.com/flatiron/winston)
+
+node flags: `--debug` or `node debug <script>`
+
+commands:
+* `c` continue
+* `n` next
+* `s` step
+* `o` step out
+* `pause` halt execution
+* `repl` enter interactive
+
+can set breakpoints from the debugger, at lines, scripts, etc
+can bind to running process by sending a `kill -SIGUSR1 <pid>`
+
+*tip:* need to be in bash!!
+
+can use `node-debugger` on command line (install npm)
+attach to it via `node --debug-brk day2/debugging/02_interval.js`
+otherwise use debug code breakpoints
