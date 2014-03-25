@@ -36,6 +36,7 @@ buffers can be used to swap encodings
 can use buffer code in browser too! (sound analysis, create images)
 
 **TODO:** look at the [html5 tuner](http://www.freetuner.co/) or [leshy labs tuner](http://www.leshylabs.com/apps/tuner/)
+http://mohayonao.github.io/timbre.js/PragmaSynth.html
 
 ###Streaming
 grunt (sync) vs gulpjs (async/piped streams) vs broccoli
@@ -76,6 +77,13 @@ use url module for url tweaking
 
 `http.globalAgent.maxSockets = 100` wil let you tweak the number of sockets. alternatively, you can set `http.globalAgent = false`
 THIS MIGHT BE GETTING REVERTED TO BE FALSE BY DEFAULT IN THE NEXT NODE VERSION
+
+
+
+
+
+
+
 
 
 ##Day 2
@@ -124,3 +132,60 @@ you can use `istanbul` to get coverage numbers
     npm install istanbul --save-dev
     // edit the package.json scripts section to be:
     // "test": "istanbul cover _mocha -- test/*.js -R spec"
+
+###Express
+
+    $ node .
+
+is equivalent to
+
+    $ NODE_ENV=development node index.js
+
+can also `$ export NODE_ENV=production` or `$ NODE_ENV=production node index.js`
+
+to pretty print env vars you can :
+
+    console.log('OMG IT RAN:' + JSON.stringify(process.env, null, 2));
+
+####Templating
+
+####Sessions
+node community tends to use redis for sessions
+
+####Forking
+Fork to spin up a worker using `cluster.fork()`
+One process per core needed.
+cluster is experimental
+can also use `cluster2` which is by ebay and gives more control
+
+####Async
+`async.waterfall` can be used for serial exec and `async.each` for parallel
+
+async collection iterators perform parallel ops on arrays (map, filter, each, reduce, detect, etc)
+
+* use *callbacks* for places where they should be called once
+* *eventemitters* should be for state transfer
+* *streams* are good for state or data transfer, specifically for transforms
+
+async is written in a functional programming style, and is good to read. "beautifully written"
+
+for token generation for example 04:
+
+    $ curl https://github.paypal.com/api/v3/authorizations --user "jichow" --data '{}'
+    $ node 04_github_pp_contributors.js jichow TOKEN DemGen-ConsumerApps1/shoppingnodeweb
+
+###Yeoman
+
+*TODO:* read Jen Moneydollars / Jenn Schiffer for some comedies
+https://medium.com/cool-code-pal/1f6430781393
+https://medium.com/cool-code-pal/cf72b588b1b
+
+generators are a good way to share best practices etc
+
+theres a generator-generator for this purposes
+
+
+
+
+***
+Done!

@@ -1,0 +1,1 @@
+console.log('OMG IT RAN:' + JSON.stringify(process.env, null, 2));
