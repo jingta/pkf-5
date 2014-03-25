@@ -1,0 +1,9 @@
+{
+  "friends": [
+    { "name": "Daniel Shaw", "country": "USA" },
+    { "name": "Elijah Insua", "country": "USA" },
+    { "name": "David Dias", "country": "Portugal" },
+    { "name": "Rod Vagg", "country": "Australia" },
+    { "name": "Trevor Norris", "country": "USA" }
+  ]
+}

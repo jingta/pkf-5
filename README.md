@@ -69,23 +69,23 @@ Pre-training resources are available immediately. Source files are distributed t
 * Day 1: Node Core
     * [Syllabus and Learning Objectives](./syllabus/day1-syllabus.pdf)
     * [Source Files](./day1)
-    * Slides
-    * Labs
+    * [Slides](./day1-pdf/)
+    * [Labs](./labs/day1-labs.md)
 * Day 2: Userland and Best Practice
     * [Syllabus and Learning Objectives](./syllabus/day2-syllabus.pdf)
-    * Source Files
-    * Slides
-    * Labs
+    * [Source Files](./day2)
+    * [Slides](./day2-pdf/)
+    * [Labs](./labs/day2-labs.md)
 * Day 3: Kraken.js / PayPal
     * [Syllabus and Learning Objectives](./syllabus/day3-syllabus.pdf)
-    * Source Files
-    * Slides
-    * Labs
+    * [Source Files](./day3)
+    * [Slides](./day3-pdf/)
+    * [Labs](./labs/day3-labs.md)
 * Post-training
     * Self-Assessment online
-    	* Thursday Mar 27, 2014
+    	* Thursday Apr 3, 2014
     * Online Review Session with the Node Firm
-        * Thursday Apr 3, 2014 1:00-2:00pm PT
+        * Thursday Apr 10, 2014 at time TBD
         * http://firm.io/pkf-5-review
 
 ## Workspaces

@@ -1,0 +1,8 @@
+My name is {name} and I:
+<ul>
+       {! Sections are used here to check if the variable is "true", not iteration !}
+       {! We are also using "." to reference properties of a parent object !}
+  <li> {#possessions.car} own a {.} {:else} don't own a {/possessions.car} car </li>
+  <li> {#possessions.motorbike} own a {.} {:else} don't own a {/possessions.motorbike} motorbike </li>
+  <li> {#possessions.bicycle} own a {.} {:else} don't own a {/possessions.bicycle} bicycle </li>
+</ul>

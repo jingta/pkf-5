@@ -1,0 +1,8 @@
+{>"layouts/master" /}
+
+{<body}
+    <main role="main">
+        Result: {.message}
+        <h3><a href="/">Keep on buying!</a></h3>
+    </main>
+{/body}

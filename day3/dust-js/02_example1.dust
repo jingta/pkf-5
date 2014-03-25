@@ -1,0 +1,6 @@
+<h1>{title}</h1>
+<ul>
+{#names}
+  <li><a href="{url}">{name}</a></li>{~n}
+{/names}
+</ul>

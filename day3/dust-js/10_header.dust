@@ -1,0 +1,4 @@
+<head>
+  {! "Named block" with a default value !}
+  <title>{+pageTitle}{defaultTitle}{/pageTitle}</title>
+</head>

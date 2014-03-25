@@ -1,0 +1,7 @@
+{! Include partial !}
+{> "10_header" /}
+
+{! Populate named block !}
+{<pageTitle}About Us{/pageTitle}
+
+<body>Here's some information about us</body>

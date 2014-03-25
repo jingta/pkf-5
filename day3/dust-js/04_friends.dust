@@ -1,0 +1,7 @@
+<ul>{~n}
+{#friends}
+  <li>(#{$idx} of {$len}) {name}, {country}</li>{~n}
+{:else}
+  <p>You have no friends!</p>
+{/friends}
+</ul>

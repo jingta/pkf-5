@@ -1,0 +1,7 @@
+<html>
+  <head><title>{@pre type="content" key="index.title" /}</title></head>
+  <body>
+    <h1>{@pre type="content" key="index.title" /}</h1>
+    <h2>{@pre type="content" key="index.greeting" /}</h2>
+  </body>
+</html>
