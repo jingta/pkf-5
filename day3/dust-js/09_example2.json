@@ -3,5 +3,9 @@
   "homeAddress": {
     "city": "Cavendish",
     "state": "Vermont"
+  },
+  "workAddress": {
+    "city": "Yonkers",
+    "state": "Despair"
   }
 }

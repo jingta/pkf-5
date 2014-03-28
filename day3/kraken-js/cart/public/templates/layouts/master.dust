@@ -16,6 +16,14 @@
                 <li><a href="/cart">{@pre type="content" key="master.cart"/}</a></li>
             </ul>
         </nav>
+        <div class="lang">
+          <ul class="nm-np inline">
+            <li><a href="/setLanguage/en-us"><img src="/img/us.png" alt="English"/></a></li>
+            <li><a href="/setLanguage/es-es"><img src="/img/es.png" alt="Español"/></a></li>
+            <li><a href="/setLanguage/pt-pt"><img src="/img/pt.gif" alt="Português"/></a></li>
+            <li><a href="/setLanguage/ll-ct"><img src="/img/cat.gif" alt="LOLCAT"/></a></li>
+          </ul>
+        </div>
     </div>
 </header>
 <div class="wrapper">

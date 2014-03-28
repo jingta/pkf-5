@@ -192,5 +192,29 @@ theres a generator-generator for this purposes
 
 
 
+
+
+
+
+
+
+##Day 3
+
+
+in dust, true and false are different than in JS
+
+###Lusca
+https://github.com/paypal/lusca is the security context, csrf, csp, etc
+
+mockgoose is a mongoose (mongo) mock backend
+
+node module caching can be used to create singletons..anytime you require, you get the same object
+
+[directory of xss vulnerabilities](http://xssed.com/)
+
+use npmrc to have multiple npm repos. such as with kappa
+
+digitalocean has a dropplet for dokku to roll your own heroku!
+
 ***
 Done!
